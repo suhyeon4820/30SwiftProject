@@ -4,7 +4,9 @@
 
 ### 01 ILoveChicken
 
-<img src = "image\01.mov">
+<video auto-play="true" loop="loop" muted="muted" plays-inline="true">
+  <source src="image\01.mov" type="video/mp4">
+</video>
 
 
 
