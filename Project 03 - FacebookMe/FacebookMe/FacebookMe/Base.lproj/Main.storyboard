@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FacebookMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-600" y="115"/>
+        </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="eh5-S1-gud">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="LNN-3g-mE1" customClass="LogInViewController" customModule="FacebookMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kms-Zr-v5o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="yWI-Ax-BgY">
+                                <rect key="frame" x="167" y="74" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="0F0-ND-f2g"/>
+                                    <constraint firstAttribute="width" constant="80" id="EFi-Ue-gbM"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="전화번호 또는 이메일 주소" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pMm-AA-773">
+                                <rect key="frame" x="30" y="204" width="354" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="mjX-qp-uJi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fh0-sN-1YL">
+                                <rect key="frame" x="30" y="271" width="354" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Gfe-cX-DFU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPs-ID-iRy">
+                                <rect key="frame" x="30" y="338" width="354" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="fA3-JL-W9b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="로그인"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-yG-sXa">
+                                <rect key="frame" x="30" y="400" width="354" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="0rj-bO-oga"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="eNS-DE-wFM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="새 Facebook 계정 만들기"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Tw-14-Nqp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yWI-Ax-BgY" firstAttribute="top" secondItem="3Tw-14-Nqp" secondAttribute="top" constant="30" id="6md-P1-NMe"/>
+                            <constraint firstItem="oPs-ID-iRy" firstAttribute="top" secondItem="Fh0-sN-1YL" secondAttribute="bottom" constant="15" id="8qA-zz-VTQ"/>
+                            <constraint firstItem="oPs-ID-iRy" firstAttribute="leading" secondItem="3Tw-14-Nqp" secondAttribute="leading" constant="30" id="FEO-eh-Jru"/>
+                            <constraint firstItem="yWI-Ax-BgY" firstAttribute="centerX" secondItem="Kms-Zr-v5o" secondAttribute="centerX" id="I2k-ak-fYx"/>
+                            <constraint firstItem="Fh0-sN-1YL" firstAttribute="top" secondItem="pMm-AA-773" secondAttribute="bottom" constant="15" id="Ink-yW-63u"/>
+                            <constraint firstItem="pMm-AA-773" firstAttribute="top" secondItem="yWI-Ax-BgY" secondAttribute="bottom" constant="50" id="KnI-fj-FHT"/>
+                            <constraint firstItem="pMm-AA-773" firstAttribute="leading" secondItem="3Tw-14-Nqp" secondAttribute="leading" constant="30" id="NEW-0H-KO1"/>
+                            <constraint firstItem="3Tw-14-Nqp" firstAttribute="trailing" secondItem="pMm-AA-773" secondAttribute="trailing" constant="30" id="Od0-hg-Feg"/>
+                            <constraint firstItem="Fh0-sN-1YL" firstAttribute="leading" secondItem="3Tw-14-Nqp" secondAttribute="leading" constant="30" id="UoV-BK-zSf"/>
+                            <constraint firstItem="3Tw-14-Nqp" firstAttribute="trailing" secondItem="oPs-ID-iRy" secondAttribute="trailing" constant="30" id="kcX-Kq-Ife"/>
+                            <constraint firstItem="3Tw-14-Nqp" firstAttribute="trailing" secondItem="Ez2-yG-sXa" secondAttribute="trailing" constant="30" id="pDC-c8-uHN"/>
+                            <constraint firstItem="Ez2-yG-sXa" firstAttribute="top" secondItem="oPs-ID-iRy" secondAttribute="bottom" constant="10" id="tdd-NA-Nq1"/>
+                            <constraint firstItem="3Tw-14-Nqp" firstAttribute="trailing" secondItem="Fh0-sN-1YL" secondAttribute="trailing" constant="30" id="y71-sa-fvT"/>
+                            <constraint firstItem="Ez2-yG-sXa" firstAttribute="leading" secondItem="3Tw-14-Nqp" secondAttribute="leading" constant="30" id="yAa-2M-cWI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTF" destination="pMm-AA-773" id="zwo-If-KKb"/>
+                        <outlet property="logInButton" destination="oPs-ID-iRy" id="gI6-ML-2Gu"/>
+                        <outlet property="passwordTF" destination="Fh0-sN-1YL" id="A91-d2-Ddy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gy8-VL-RM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.81159420289856" y="114.50892857142857"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="p01-wG-q6n">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="zQG-fA-5Ue" customClass="MainViewController" customModule="FacebookMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xhz-1v-Kvq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="SWS-Bh-1K6">
+                                <rect key="frame" x="71" y="166" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BjN-0n-Eul"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cVC-6G-fO0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wl-EY-YoZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689.8550724637682" y="849.77678571428567"/>
+        </scene>
+        <!--Navi View Controller-->
+        <scene sceneID="op3-sk-Xfe">
+            <objects>
+                <navigationController storyboardIdentifier="MainVC1" automaticallyAdjustsScrollViewInsets="NO" id="Adx-In-e8E" customClass="NaviViewController" customModule="FacebookMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e0Q-Ae-MPX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zQG-fA-5Ue" kind="relationship" relationship="rootViewController" id="cDo-yu-TiI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tT-lK-xlh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779.71014492753625" y="849.77678571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" width="128" height="128"/>
+        <image name="logo" width="1066" height="1070"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
